@@ -1,0 +1,20 @@
+@import "bootstrap/scss/bootstrap.scss";
+
+// ========= Plugins CSS START =========
+
+@import "../public/css/plugins/fontawesome.min.css";
+@import "../public/css/plugins/feather.css";
+@import "../public/css/plugins/odometer.css";
+@import "../public/css/plugins/animation.css";
+@import "../public/css/plugins/euclid-circulara.css";
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/effect-cards";
+@import "swiper/css/free-mode";
+@import "swiper/css/thumbs";
+@import "venobox/dist/venobox.min.css";
+@import "plyr/dist/plyr.css";
+// ========= Plugins CSS END =========
+
+@import "../public/scss/styles.scss";
+@import "../public/scss/custom.scss";

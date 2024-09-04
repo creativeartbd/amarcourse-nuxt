@@ -1,0 +1,72 @@
+{
+  "categoryItemOne": [
+    {
+      "text": "Web Design",
+      "link": "/course-filter-one-toggle/Web Design"
+    },
+    {
+      "text": "Backend",
+      "link": "/course-filter-one-toggle/Backend"
+    },
+    {
+      "text": "Mobile Application",
+      "link": "/course-filter-one-toggle/Mobile Application"
+    },
+    {
+      "text": "Finance & Accounting",
+      "link": "/course-filter-one-toggle/Finance & Accounting"
+    },
+    {
+      "text": "Graphic Design",
+      "link": "/course-filter-one-toggle/Graphic Design"
+    }
+  ],
+  "categoryItemTwo": [
+    {
+      "text": "Personal Development",
+      "link": "/course-filter-one-toggle/Personal Development"
+    },
+    {
+      "text": "IT and Software",
+      "link": "/course-filter-one-toggle/IT and Software"
+    },
+    {
+      "text": "Art & Humanities",
+      "link": "/course-filter-one-toggle/Art & Humanities"
+    }
+  ],
+  "categoryItemThree": [
+    {
+      "text": "Web Design",
+      "link": "/course-filter-one-toggle/Web Design"
+    },
+    {
+      "text": "Backend",
+      "link": "/course-filter-one-toggle/Backend"
+    },
+    {
+      "text": "Mobile Application",
+      "link": "/course-filter-one-toggle/Mobile Application"
+    },
+    {
+      "text": "Finance & Accounting",
+      "link": "/course-filter-one-toggle/Finance & Accounting"
+    },
+    {
+      "text": "Graphic Design",
+      "link": "/course-filter-one-toggle/Graphic Design"
+    },
+    {
+      "text": "Personal Development",
+      "link": "/course-filter-one-toggle/Personal Development"
+    },
+    {
+      "text": "IT and Software",
+      "link": "/course-filter-one-toggle/IT and Software"
+    },
+    {
+      "text": "Art & Humanities",
+      "link": "/course-filter-one-toggle/Art & Humanities"
+    }
+  ]
+}

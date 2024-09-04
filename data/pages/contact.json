@@ -1,0 +1,25 @@
+{
+  "contactOne": [
+    {
+      "title": "মোবাইল নম্বর",
+      "numOne": "+880 1671133639",
+      "icon": "feather-headphones",
+      "address": "৫ নং এস.আর. পার্ক হাজারীবাগ মডেল টাউন, ঢাকা-১২০৯, বাংলাদেশ।"
+    },
+    {
+      "title": "ইমেইল এড্রেস",
+      "mailOne": "support@amarcourse.com",
+      "icon": "feather-mail",
+      "numOne": "",
+      "address": "",
+      "numTwo": ""
+    },
+    {
+      "title": "আমাদের ঠিকানা",
+      "address": "৫ নং এস.আর. পার্ক হাজারীবাগ মডেল টাউন, ঢাকা-১২০৯, বাংলাদেশ।",
+      "icon": "feather-map-pin",
+      "numOne": "",
+      "numTwo": ""
+    }
+  ]
+}

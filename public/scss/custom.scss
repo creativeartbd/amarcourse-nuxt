@@ -1,0 +1,10 @@
+.thumbnail {
+  @media (max-width: 767px) {
+    &.image-2 {
+      display: none;
+    }
+    &.image-3 {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "footerOne": [
+    {
+      "description": "আমার কোর্স, একটি অনলাইনভিত্তিক ই-লার্নিং প্লাটফর্ম। সকল প্রকার প্রোগ্রামিং স্কিল সহজেই একই জায়গায় পেতে আমরা তৈরী করেছি “আমার কোর্স”। এখানে আপনি পাবেন সাম্প্রতিককম টেকনোলজি সাথে মিল রেখে তৈরী কোর্স।",
+      "phone": "(880) 1671133639",
+      "mail": "support@amarcourse.com",
+      "address": "৫ নং এস.আর. পার্ক হাজারীবাগ মডেল টাউন, ঢাকা-১২০৯, বাংলাদেশ।",
+      "usefulLinks": [
+        {
+          "text": "হোম",
+          "link": "/"
+        },
+        {
+          "text": "আমাদের সম্পর্কে",
+          "link": "/pages/about-us-01"
+        },
+        {
+          "text": "ফ্রি ভিডিও টিউটোরিয়াল",
+          "link": "/13-university-classic"
+        },
+        {
+          "text": "সকল কোর্স",
+          "link": "/05-classic-lms"
+        },
+        {
+          "text": "টিউটোরিয়াল",
+          "link": "/pages/faqs"
+        },
+        {
+          "text": "প্রশ্নোত্তর",
+          "link": "/pages/faqs"
+        }
+      ],
+      "ourCompany": [
+        {
+          "text": "যোগযোগ",
+          "link": "/contact"
+        },
+        {
+          "text": "ব্লগ",
+          "link": "/blog-list"
+        },
+        {
+          "text": "আমাদের সম্পর্কে",
+          "link": "/elements/team"
+        }
+      ],
+      "socialLink": [
+        {
+          "icon": "feather-facebook",
+          "link": "https://www.facebook.com/groups/168879365325980"
+        },
+        {
+          "icon": "feather-youtube",
+          "link": "https://www.youtube.com/channel/UCkdPCRKSzZTVB9eo9CDdTQw?sub_confirmation=1"
+        }
+      ]
+    }
+  ],
+  "footerTwo": [
+    {
+      "description": "We’re always in search for talented and motivated people.Don’t be shy introduce yourself!",
+      "descriptionTwo": "2000+ Our students are subscribe Around the World.Don’t be shy introduce yourself!",
+      "phone": "(406) 555-0120",
+      "mail": "admin@example.com",
+      "address": "North America, USA",
+      "usefulLinks": [
+        {
+          "text": "Marketplace",
+          "link": "/12-marketplace"
+        },
+        {
+          "text": "kindergarten",
+          "link": "/04-kindergarten"
+        },
+        {
+          "text": "University",
+          "link": "/13-university-classic"
+        },
+        {
+          "text": "Classic Lms",
+          "link": "/05-classic-lms"
+        },
+        {
+          "text": "FAQ",
+          "link": "/pages/faqs"
+        }
+      ],
+      "ourCompany": [
+        {
+          "text": "Contact Us",
+          "link": "/contact"
+        },
+        {
+          "text": "Become Teacher",
+          "link": "/become-a-teacher"
+        },
+        {
+          "text": "Blog",
+          "link": "/blog-list"
+        },
+        {
+          "text": "Instructor",
+          "link": "/elements/team"
+        },
+        {
+          "text": "Events",
+          "link": "/pages/event-list"
+        }
+      ],
+      "socialLink": [
+        {
+          "icon": "feather-facebook",
+          "link": "https://www.facebook.com/"
+        },
+        {
+          "icon": "feather-twitter",
+          "link": "https://www.twitter.com"
+        },
+        {
+          "icon": "feather-instagram",
+          "link": "https://www.instagram.com/"
+        },
+        {
+          "icon": "feather-linkedin",
+          "link": "https://www.linkdin.com/"
+        }
+      ]
+    }
+  ]
+}
