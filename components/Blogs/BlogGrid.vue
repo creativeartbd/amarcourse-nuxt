@@ -76,7 +76,7 @@ const {
     },
 });
 
-const visibleBlogs = ref(posts.value);
+const visibleBlogs = ref(posts.value.posts);
 
 // Generate an SEO-friendly slug from the post title
 const generateSlug = (title) => {
