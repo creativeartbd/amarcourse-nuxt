@@ -5,12 +5,11 @@ export default defineEventHandler(async (event) => {
 
     try {
         // Prepare the Basic Auth header
-        const authHeader = "Basic " + btoa(`${config.WP_USERNAME}:${config.WP_APPLICATION_PASSWORD}`);
+        const authHeader = "Basic " + btoa(`${config.LMS_API_KEY}:${config.LMS_SECRET_KEY}`);
 
-        const response = await $fetch(`https://api.amarcourse.com/wp-json/custom/v1/single-course/${query.course_id}`, {
+        const response = await $fetch(`https://api.amarcourse.com/wp-json/tutor/v1/course-rating/${query.course_id}`, {
             headers: {
-                Authorization: authHeader, // Pass the Basic Auth header
-                "X-Secret-Key": config.CUSTOM_SECRET_KEY,
+                Authorization: authHeader,
             },
         });
 

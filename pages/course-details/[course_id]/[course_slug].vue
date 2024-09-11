@@ -44,11 +44,46 @@ import sal from "sal.js";
 
 const route = useRoute();
 const course_id = route.params.course_id;
+
+// Get the course info
 const {
-    data: course,
+    data: courseInfo,
     pending,
     error,
 } = await useFetch("/api/course", {
+    params: {
+        course_id: course_id,
+    },
+});
+
+// Get the course rating
+const {
+    data: courseRatings,
+    pendingRatings,
+    errorRatings,
+} = await useFetch("/api/ratings", {
+    params: {
+        course_id: course_id,
+    },
+});
+
+// Get the course enrollment
+const {
+    data: courseEnrollments,
+    pendingEnrollments,
+    errorEnrollments,
+} = await useFetch("/api/enrollments", {
+    params: {
+        course_id: course_id,
+    },
+});
+
+// Get the course additional information
+const {
+    data: courseAddInfo,
+    pendingAddInfo,
+    errorAddInfo,
+} = await useFetch("/api/additional-info", {
     params: {
         course_id: course_id,
     },

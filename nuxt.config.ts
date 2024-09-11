@@ -9,6 +9,7 @@ export default defineNuxtConfig({
         WP_USERNAME: process.env.WP_USERNAME,
         LMS_API_KEY: process.env.LMS_API_KEY,
         LMS_SECRET_KEY: process.env.LMS_SECRET_KEY,
+        CUSTOM_SECRET_KEY: process.env.CUSTOM_SECRET_KEY,
     },
     devServer: {
         port: 4000,
