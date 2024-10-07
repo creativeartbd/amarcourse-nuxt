@@ -3,7 +3,7 @@
         <div v-for="(data, index) in course.slice(start, end)" :key="index" class="course-grid-2">
             <div :class="`rbt-card variation-01 rbt-hover  ${isActiveListView ? 'card-list-2' : ''} `">
                 <div class="rbt-card-img">
-                    <nuxt-link :to="`/course-details/${data.ID}/${generateSlug(data.post_title)}`">
+                    <nuxt-link :to="`/course-details/${data.ID}/${generateSlug(data.post_name)}`">
                         <nuxt-img class="h-100" :src="data.thumbnail_url" alt="Card image" />
                         <div class="rbt-badge-3 bg-white">
                             <!-- <span>-{{ data.price }}%</span>
@@ -16,12 +16,12 @@
                         <div class="rbt-review">
                             <div class="rating" v-if="data.ratings.rating_count > 0">
                                 <i
-                                    v-for="(elm, i) in parseInt(data.ratings.rating_sum)"
+                                    v-for="(elm, i) in parseInt(data.ratings.rating_avg)"
                                     :key="i"
                                     class="fas fa-star"
                                 ></i>
                                 <i
-                                    v-for="(elm, i) in 5 - parseInt(data.ratings.rating_sum)"
+                                    v-for="(elm, i) in 5 - parseInt(data.ratings.rating_avg)"
                                     :key="i"
                                     class="far fa-star"
                                 ></i>
@@ -36,7 +36,7 @@
                     </div>
 
                     <h4 class="rbt-card-title">
-                        <nuxt-link :to="`/course-details/${data.ID}/${generateSlug(data.post_title)}`">{{
+                        <nuxt-link :to="`/course-details/${data.ID}/${generateSlug(data.post_name)}`">{{
                             data.post_title
                         }}</nuxt-link>
                     </h4>
@@ -75,7 +75,7 @@
                         </div>
                         <nuxt-link
                             class="rbt-btn-link"
-                            :to="`/course-details/${data.ID}/${generateSlug(data.post_title)}`"
+                            :to="`/course-details/${data.ID}/${generateSlug(data.post_name)}`"
                         >
                             আরো জানুন<i class="feather-arrow-right"></i>
                         </nuxt-link>

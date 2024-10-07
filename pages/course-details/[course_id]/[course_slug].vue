@@ -3,13 +3,17 @@
     <HeaderStyleTen headerSticky="" :headerType="true" />
 
     <div class="rbt-breadcrumb-default rbt-breadcrumb-style-3">
-        <CourseHead :checkMatch="checkMatch !== undefined ? checkMatch : ''" />
+        <CourseHead :courseHeadData="courseHeadData" :checkMatch="checkMatch !== undefined ? checkMatch : ''" />
     </div>
 
     <div class="rbt-course-details-area ptb--60">
         <div class="container">
             <div class="row g-5">
-                <CourseDetailsOne :checkMatchCourses="checkMatch !== undefined ? checkMatch : ''" />
+                <CourseDetailsOne
+                    :courseDetails="courseDetails"
+                    :courseId="course_id"
+                    :checkMatchCourses="checkMatch !== undefined ? checkMatch : ''"
+                />
             </div>
         </div>
     </div>
@@ -56,38 +60,28 @@ const {
     },
 });
 
-// Get the course rating
-const {
-    data: courseRatings,
-    pendingRatings,
-    errorRatings,
-} = await useFetch("/api/ratings", {
-    params: {
-        course_id: course_id,
-    },
-});
+const singleCourse = courseInfo.value.data;
 
-// Get the course enrollment
-const {
-    data: courseEnrollments,
-    pendingEnrollments,
-    errorEnrollments,
-} = await useFetch("/api/enrollments", {
-    params: {
-        course_id: course_id,
-    },
-});
+const courseHeadData = {
+    title: singleCourse.post_title,
+    excerpt: singleCourse.post_excerpt,
+    rating: singleCourse.ratings,
+    enrollments: singleCourse.enrollments,
+    author: singleCourse.author_name,
+    author_image_url: singleCourse.author_image_url,
+    categories: singleCourse.categories,
+    last_updated: singleCourse.updated_on,
+};
 
-// Get the course additional information
-const {
-    data: courseAddInfo,
-    pendingAddInfo,
-    errorAddInfo,
-} = await useFetch("/api/additional-info", {
-    params: {
-        course_id: course_id,
-    },
-});
+const courseDetails = {
+    featured_image: singleCourse.featured_image,
+    additional_info: singleCourse.course_additional_info,
+    description: singleCourse.post_content,
+    author_image_url: singleCourse.author_image_url,
+    author_name: singleCourse.author_name,
+    author_description: singleCourse.author_description,
+    rating: singleCourse.ratings,
+};
 
 const postId = 17;
 let getCourse;

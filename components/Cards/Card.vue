@@ -26,9 +26,9 @@
                 <div class="rbt-card-top">
                     <div class="rbt-review">
                         <div class="rating" v-if="data?.ratings?.rating_count > 0">
-                            <i v-for="(elm, i) in parseInt(data?.ratings?.rating_sum)" :key="i" class="fas fa-star"></i>
+                            <i v-for="(elm, i) in parseInt(data?.ratings?.rating_avg)" :key="i" class="fas fa-star"></i>
                             <i
-                                v-for="(elm, i) in 5 - parseInt(data?.ratings?.rating_sum)"
+                                v-for="(elm, i) in 5 - parseInt(data?.ratings?.rating_avg)"
                                 :key="i"
                                 class="far fa-star"
                             ></i>
@@ -84,6 +84,7 @@
                 <div class="rbt-card-bottom">
                     <div class="rbt-price">
                         <span class="current-price">${{ data?.price || "N/A" }}</span>
+                        <span class="off-price" v-if="data.sales_price">${{ data.sales_price }}</span>
                     </div>
                     <template v-if="data?.button">
                         <nuxt-link class="rbt-btn-link left-icon" :to="`/course-details/${data?.ID}`">

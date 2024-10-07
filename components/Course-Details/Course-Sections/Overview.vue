@@ -1,63 +1,16 @@
 <template>
-  <div
-    :class="`rbt-course-feature-box overview-wrapper rbt-shadow-box mt--30 has-show-more ${
-      toggle ? 'active' : ''
-    }`"
-    id="overview"
-  >
-    <div class="rbt-course-feature-inner has-show-more-inner-content">
-      <div class="section-title">
-        <h4 class="rbt-title-style-3">{{ checkMatchCourses.title }}</h4>
-      </div>
-      <p>{{ checkMatchCourses.desc }}</p>
-
-      <div class="row g-5 mb--30">
-        <div class="col-lg-6">
-          <ul class="rbt-list-style-1">
-            <li
-              v-if="checkMatchCourses.overviewList"
-              v-for="(item, innerIndex) in checkMatchCourses.overviewList.slice(
-                0,
-                4
-              )"
-              :key="innerIndex"
-            >
-              <i class="feather-check"></i>
-              {{ item.listItem }}
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-lg-6">
-          <ul class="rbt-list-style-1">
-            <li
-              v-if="checkMatchCourses.overviewList"
-              v-for="(item, innerIndex) in checkMatchCourses.overviewList.slice(
-                4,
-                8
-              )"
-              :key="innerIndex"
-            >
-              <i class="feather-check"></i>
-              {{ item.listItem }}
-            </li>
-          </ul>
-        </div>
-      </div>
-      <p>{{ checkMatchCourses.descTwo }}</p>
-    </div>
     <div
-      class="rbt-show-more-btn"
-      :class="{ active: toggle }"
-      @click="toggle = !toggle"
+        :class="`rbt-course-feature-box overview-wrapper rbt-shadow-box mt--30 has-show-more ${toggle ? 'active' : ''}`"
+        id="overview"
     >
-      Show More
+        <div class="rbt-course-feature-inner has-show-more-inner-content">
+            <p v-html="courseDetails"></p>
+        </div>
     </div>
-  </div>
 </template>
 
 <script setup>
-defineProps(["checkMatchCourses"]);
+defineProps(["courseDetails"]);
 
 const toggle = ref(false);
 </script>
